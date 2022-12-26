@@ -1,0 +1,87 @@
+/*====== RESET ======*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fa4251;
+}
+
+.conteudo {
+	background-color: antiquewhite;
+	max-width: 960px;
+	margin: auto;
+	margin-top: 60px;
+	border-radius: 20px;
+
+}
+
+.content{
+	display: flex;
+}
+
+.imagem{
+	width: 250px;
+	border-radius: 20px 0 0 20px;
+	background-image: url("../img/imagemA.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+.formulario {
+	width: 70%;
+	margin: 26px 25px 100px 20px;
+}
+
+
+.campos p {
+	text-transform: uppercase; 
+
+}
+
+
+
+.campos .col-12 {
+	width: 100%;
+	display: flex; 
+	margin-right: 5px;
+
+}
+
+.campos .col-6 {
+	width: 50%; 
+	margin-right: 5px;
+	display: flex;
+
+
+
+}
+
+.campos {
+	display: flex; 
+
+}
+
+input, 
+select{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.mb-2 {
+	margin-bottom: 40px;
+}
+
+
+
+button {
+
+	background-color: #000;
+	color: #fff;
+	height: 40px;
+	width: 155px;
+	border-radius: 7px;
+}

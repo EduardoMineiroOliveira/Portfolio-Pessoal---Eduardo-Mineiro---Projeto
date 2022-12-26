@@ -1,0 +1,10 @@
+/*====== RESET ======*/
+* {margin: 0; padding:0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/*====== BODY ======*/
+
+body {
+  background-image: url(../images/biblioteca.jpg);
+}

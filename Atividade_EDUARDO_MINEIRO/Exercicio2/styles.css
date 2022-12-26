@@ -1,0 +1,175 @@
+body{
+    font-size: 12pt;
+    font-family: Verdana;
+  background: #ccc;
+}
+
+
+article{
+  background: #fff;
+  border-radius: 22px;
+}
+
+.textpadrao{
+  color: #263568;
+}
+
+.textbasico{
+  color: #db7617;
+}
+
+.textpremium{
+  color: #222;
+}
+
+
+
+.texto1 {
+  border-radius: 20px ;
+  padding: 4px;
+  width: 200px;
+  height: 22px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+}
+
+h4, h3.meio{
+  text-aling: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+
+
+.texto2 {
+  border-radius: 20px;
+  padding: 4px;
+  width: 270px;
+  height: 35px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -15px;
+}
+.caixa1{
+    width: 285px;
+    height: 400px;
+    text-align: center;
+    padding: 1px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    float: left;
+}
+
+.caixa2{
+    width: 400px;
+    height: 566px;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    float: left;
+}
+
+.caixa3{
+    width: 285px;
+    height: 409px;
+    text-align: center;
+    padding: 2px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    float: left;
+}
+
+header{
+    height: 220px;
+}
+
+p, h3{
+    padding: 8px;
+}
+  
+ .interno1{
+  border-radius = 20px;
+  width = 170px;
+  background: #db7617;
+  padding: 1px;
+  text-align: justify;
+  margin-top: -20px;
+  border-radius: 12px;
+  
+}
+
+
+.interno2{
+  border-radius = 20px;
+  width = 170px;
+  height: 320px;
+  background: #263568;
+  padding: 1px;
+  text-align: justify;
+  margin-top: -20px;
+  border-radius: 12px;
+}
+
+
+
+.interno3{
+  border-radius = 20px;
+  width = 170px;
+  height: 250px;
+  background: #222;
+  padding: 1px;
+  text-align: justify;
+  margin-top: -20px;
+  border-radius: 12px;
+}
+
+.botao {
+    width: 210px;
+    height: 35px;
+    font-size: 27px;
+    margin-left: -16px;
+    padding: 10px;
+    background: #db7617;
+    margin-top: 12px;
+    border-radius: 30px;
+}
+
+.botao2 {
+    width: 320px;
+    height: 60px;
+    font-size: 40px;
+    padding: 7px;
+    background: #263568;
+    margin-top: 20px;
+    margin-left: -30px;
+    border-radius: 35px;
+}
+
+.botao3 {
+    width: 210px;
+    height: 35px;
+    font-size: 27px;
+    margin-left: -16px;
+    padding: 10px;
+    background: #222;
+    margin-top: 12px;
+    border-radius: 30px;
+}

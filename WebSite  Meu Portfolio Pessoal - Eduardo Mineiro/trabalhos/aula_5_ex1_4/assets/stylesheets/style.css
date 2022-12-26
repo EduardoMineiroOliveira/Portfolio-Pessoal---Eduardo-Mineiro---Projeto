@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+aside,
+main,
+footer {
+  padding: 24px;
+}
+
+header,
+footer {
+  background-image: url("../img/banner.jpg");
+}
+
+section,
+article,
+div,
+table {
+  padding: 16px;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Anton', Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin: 24px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+h2,
+h3 {
+  color: #1634bd;
+  margin: 24px auto 16px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  color: #222;
+  line-height: 24px;
+  margin: 8px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  border-bottom: 4px solid #1634bd;
+}
+
+header img {
+  animation: bordaCamaleao 4s infinite;
+  border: 2px solid #1634bd;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+  height:150px;
+  transition: transform .6s ease-in-out;
+  width: 150px;
+}
+
+header img:hover {
+  transform: rotate(360deg);
+}
+
+
+header div {
+  display: inline-block;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+table {
+  background-color: #b5c2f8;
+  border-collapse: separate;
+  margin: auto;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  border: 1px solid #1634bd
+}
+
+table caption {
+  margin: auto auto 16px;
+}
+
+th,
+td {
+  background-color: #fff;
+  padding: 16px;
+}
+
+footer {
+  border-top: 4px solid #1634bd;
+}
+
+footer b {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+[class*="-item"] {
+  background-color: rgba(181, 194, 248, .2);
+  border-radius: 32px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+[class*="-item"]:nth-child(odd) {
+  background-color: rgba(248, 236, 181, .5);
+}
+
+[class*="-item"]:last-child {
+  background-color: rgba(248, 195, 181, 0.5);
+}
+
+[class*="-item"]:first-of-type {
+  background-color: rgba(191, 248, 181, 0.5);
+}
+
+a[href*="tel"]::before {
+  content: '\0260E';
+  margin-right: 4px;
+}
+
+.ano {
+  color: #888;
+  display: block;
+  font-style: italic;
+}
+
+#contatoHeader {
+  margin: -40px 0 0 50%;
+}
+
+#objetivo mark {
+  background-color: rgba(181, 194, 248, .2);
+}
+
+#recomendacoes caption {
+  color: #1634bd;
+}
+
+#habilidades {
+  background-color: rgba(181, 194, 248, .2);
+  border-radius: 16px 0;
+}
+
+#hardSkills,
+#softSkills {
+  display: inline-block;
+  vertical-align: top;
+  min-width: calc(50% - 32px);
+}
+
+#hardSkills ul,
+#softSkills ul {
+  background-color: #b5c2f8;
+  border-radius: 16px 0;
+  min-height: 112px;
+  padding: 16px;
+}
+
+#experienciaProfissional article h3 {
+  margin-top: 0;
+}
+
+#premiosReconhecimentos {
+  background-color: rgba(181, 194, 248, .2);
+  border-left: 4px solid #1634bd;
+  padding-left: 32px;
+}
+
+#premiosReconhecimentos h2 {
+  margin: 24px auto;
+}
+
+#premiosReconhecimentos ol {
+  list-style-type: lower-roman;
+}
+
+#premiosReconhecimentos ol li {
+  line-height: 32px;
+}
+
+#formacaoAcademica article h3 {
+  margin-top: 0;
+}
+
+#contatoFooter a {
+  text-decoration: none;
+}
+
+@keyframes bordaCamaleao {
+  0% {
+    border: 2px solid #1634bd;
+  }
+  25% {
+    border: 2px solid #bd1616;
+  }
+  50% {
+    border: 2px solid #bd9616;
+  }
+  75% {
+    border: 2px solid #4bbd16;
+  }
+  100% {
+    border: 2px solid #1634bd;
+  }
+}

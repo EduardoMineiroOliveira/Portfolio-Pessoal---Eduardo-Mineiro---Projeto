@@ -1,0 +1,213 @@
+/*====== RESET ======*/
+* {margin: 0; padding:0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/*====== CABECALHO ======*/
+#cabecalho {width: 100%; height: 60px; float: left; padding: 3% 4%; position: fixed; background-color:#fff; background-image: linear-gradient(to bottom, transparent, rgba(204,204,204,.3)); z-index: 1;}
+#cabecalho .logo {float: left; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6em;}
+#cabecalho .logo span {color: #f8cd45; font-family: 'Oswald', sans-serif; font-weight: 700;}
+.icon-menu {width: 56px; height: 42px; float: right; border: 1px solid #ccc; border-radius: 5px;}
+.icon-menu:hover {background-color: #ccc;}
+.hamburguer {width: 20px; height: 20px; display: block; position: relative; background: none; margin: 10px auto;}
+.hamburguer:after, .hamburguer:before, .hamburguer span, .hamburguer label { content: ' '; display: block; width: 100%; height: 4px; background: #808080; left: 0; position: absolute; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out;}
+.hamburguer:before {top: 0;}
+.hamburguer:after {bottom: 0;}
+.hamburguer:focus {outline: none;}
+.hamburguer label {width: 100%; height: 100%;background: none; cursor: pointer; z-index: 1000;}
+.hamburguer span {top: 8px;}
+#change-hamburguer {display: none;}
+#change-hamburguer:checked ~ .hamburguer:before, #change-hamburguer:checked ~ .hamburguer:after {top: 10px; margin-top: -10%;}
+#change-hamburguer:checked ~ .hamburguer:before {-ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+#change-hamburguer:checked ~ .hamburguer:after {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+#change-hamburguer:checked ~ .hamburguer span {opacity: 0;}
+#change-hamburguer:checked ~ .menu {max-height: 200px;}
+/*====== MENU ======*/
+#btn-menu{display: none;}
+.menu { display:block; width: 70%; height: 100%; right: 30%; position: fixed; text-align: center; background-color: rgb(33, 30, 30); top: 60px; transform: translateX(-100%); transition: all 0.3s}
+.menu ul {width: 100%; float: left; text-align: center; margin: 5% 0 10% 0;}
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover {color: #808080;}
+#btn-menu:checked ~ .menu {transform: translateX(0%);}
+/*====== MENU BUTTONS ======*/
+.social-button {display: inline-block; width: 50px; height: 50px; line-height: 50px; margin:3%; text-align: center; position: relative; overflow: hidden;opacity: .99; border-radius: 50%; box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.3); transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);}
+.social-button:before {content: ''; background-color: #000; width: 120%; height: 120%; position: absolute; top: 90%; left: -110%;transform: rotate(45deg); transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);}
+.social-button .fa {font-size: 38px; vertical-align: middle; transform: scale(0.8); transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);}
+.social-button.facebook:before {background-color: #3B5998;}
+.social-button.facebook .fa {color: #3B5998;}
+.social-button.twitter:before {background-color: #00aced;}
+.social-button.twitter .fa {color: #00aced;}
+.social-button.github:before {background-color: #ed5353;}
+.social-button.github .fa {color: #ed5353;}
+.social-button:hover:before {top: -10%;left: -10%;}
+.social-button:hover .fa {color: #fff; transform: scale(1);}
+.social-button:focus {opacity: .85;}
+/*====== CONTEUDO ======*/
+#conteudo {width: 100%; float: left; padding-top: 10%;}
+#background-fundo {width: 100%; height: 800px; position: fixed; background-image: url(../images/fundo.jpg); z-index: -1;}
+/*====== HOME ======*/
+#home {width: 100%; float: left; padding: 16% 4%; text-align: center; background-image: url(../images/media-screen.jpg) }
+#home h2 {font-size: 2.5em; color: #f8cd45;}
+#home img {margin: 10% 0;}
+.type-wrap {color: #fff; padding: 5%;}
+/*====== SOBRE ======*/
+#sobre {width: 100%; float: left; padding: 20% 4%; text-align: center; background-color:#3b599805;}
+#sobre h2 {font-size: 1.5em; padding-bottom: 10px; font-family: arial; font-weight: 700; color: #fff; border-bottom: 1px dashed #299ec8; text-shadow:3px 4px 2px #464646;}
+#sobre span {font-size: .6em;}
+#sobre h3 {color: #f8cd45; text-align: left; font-family: georgia; font-weight: 700; margin-top: 5%}
+#sobre p {color: #fff; text-align: left; text-align: left; margin-top: 5%; font-size: .9em;}
+#sobre img { width: 90%; margin-top: 5%;}
+/*====== SERVIÇOS ======*/
+#servicos {width: 100%; float: left; padding: 20% 4%; text-align: center; background-color: #f8cd4580;}
+#servicos h2 {font-size: 1.5em;
+    padding-bottom: 10px;
+    font-family: arial;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 1px dashed #717171;
+    text-shadow: 3px 4px 2px #292929;}
+#servicos span {font-size: .6em;}
+#servicos h3 {color: #222; text-align: left; font-weight: 700; margin-top: 5%}
+#servicos p {color: #fff; text-align: left; margin-top: 2%; font-size: .9em;}
+/*====== PORTIFÓLIO ======*/
+#portifolio {width: 100%; float: left; padding: 20% 4%; text-align: center; background-color: #3b599805;}
+#portifolio h2 {font-size: 1.5em;
+    padding-bottom: 10px;
+    font-family: arial;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 1px dashed #717171;
+    text-shadow: 3px 4px 2px #292929;}
+#portifolio span {font-size: .6em;}
+.projetos {position: relative; overflow: hidden;}
+.projetos img { margin-top: 5%; }
+.retina{position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5); border-radius: 2px; text-align: center; padding: 30px; -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);}
+.projetos:hover .retina {opacity: 1; box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);}
+.projetos p {color: rgba(255, 255, 255, .8);}
+.fa-search {position: relative; top: 130px; background-color: mediumaquamarine; color: #888; width: 45px; height: 34px;}
+/*====== CONTATO ======*/
+#contato {width: 100%; float: left; padding: 20% 4%; text-align: center; background-color: rgba(23,22,20,.9);}
+#contato h2 {font-size: 1.5em; padding-bottom: 10px; font-family: arial; font-weight: 700; color: #fff; border-bottom: 1px dashed #ed5353; text-shadow:3px 4px 2px #5f5e5e;}
+#contato span {font-size: .6em;}
+#contato h3 {color: #fff; text-align: left; margin-top: 5%; font-size: .9em;}
+#contato form,#contato p {text-align: left; margin-top: 5%; color: #fff; font-size: .9em;}
+#contato form input { width: 100%; height: 25px; border-radius: 5px;}
+#contato form textarea {width: 100%; border-radius: 5px;}
+#contato form .submit {width: 20%; border-radius: 10px; height: 40px; background-color: #ed5353; color: #fff; cursor: pointer;  -webkit-appearance: none;}
+#contato form .submit:hover {color: #ed5353; background-color: #ccc; }
+#contato h4 {color: #555; font-family: 'georgia'; font-weight: 700; margin: 5% 0 5% 0;}
+#contato h5 {text-align: center; margin-top: 5%; color: #fff; font-size: .9em;}
+/*====== RODAPÉ ======*/
+#rodape {width: 100%; float: left; padding: 3% 4%; text-align: center; background-color: #fff;}
+#rodape p {color: #555;}
+#rodape .social-button {margin: 1%;}
+
+@media screen and (min-width: 480px){
+/*====== CABECALHO ======*/
+#cabecalho {height: 70px;}
+#cabecalho .logo {font-size: 2em;}
+/*====== MENU ======*/
+.menu {top: -16px;}
+/*====== HOME ======*/	
+#home h1 {font-size: 3.5em;}
+.type-wrap {font-size: 1.3em;}
+/*====== SOBRE ======*/
+#sobre h2 {font-size: 2em;}
+#sobre h3 {font-size: 1.3em;}
+#sobre p {font-size: 1em;}
+#sobre img { width: 60%}
+/*====== SERVIÇOS ======*/
+#servicos h2 {font-size: 2em;}
+#servicos h3 {font-size: 1.3em;}
+#servicos p {font-size: 1em;}
+/*====== PORTIFÓLIO ======*/
+#portifolio h2 {font-size: 2em;}
+.projetos p { font-size: 1.2em;}
+/*====== CONTATO ======*/
+#contato h2 {font-size: 2em;}
+#contato h3 {font-size: 1em;}
+#contato form,#contato p {font-size: 1em;}
+#contato h4 {font-size: 1.3em;}
+}
+@media screen and (min-width: 768px){
+/*====== CABECALHO ======*/
+#cabecalho {height: 89px;}
+/*====== MENU ======*/
+.menu {top: 89px;}
+/*====== CONTEUDO ======*/
+#conteudo {padding-top: 5%;}
+}
+@media screen and (min-width: 1024px){
+/*====== CABECALHO ======*/
+#cabecalho {
+height: 80px;
+top: -40px;
+}
+/*====== MENU ======*/
+.menu {top: 110px;}
+/*====== CONTEUDO ======*/
+#conteudo {padding-top: 0;}
+/*====== HOME ======*/	
+#home {padding: 14% 4%;}
+#home img {margin: 2% 0;}
+/*====== SOBRE ======*/
+#sobre {padding: 14% 4%; background-image: url(../images/grupo-imagens.png); background-repeat: no-repeat; background-position: bottom right; background-size: contain;}
+#sobre h2 {font-size: 3em;}
+#sobre h3 {font-size: 1.5em;}
+#sobre p {font-size: 1.2em;}
+#sobre img { width: 90%}
+.box-sobre {display: flex;}
+.text-sobre {width: 65%;}
+/*====== SERVIÇOS ======*/
+#servicos {padding: 14% 4%; background-image: url(../images/grupo-imagens2.png); background-repeat: no-repeat; background-position: bottom right; background-size: contain;}
+#servicos h2 {font-size: 3em;}
+#servicos h3 {font-size: 1.5em;}
+#servicos p {font-size: 1.2em;}
+.box-servicos {display: flex; margin-top: 5%;}
+.text-servicos {margin: 1%;}
+/*====== PORTIFÓLIO ======*/
+#portifolio {padding: 14% 4%;}
+#portifolio h2 {font-size: 3em;}
+.box-portifolio {margin-top: 5%; display: flex; justify-content: center;}
+/*====== CONTATO ======*/
+#contato {padding: 14% 4%;}
+#contato h2 {font-size: 3em;}
+#contato h3 {font-size: 1.1em;}
+.box-contato {display: flex; justify-content: space-between;}
+.box-form { width: 50%; margin: 3%;}
+.box-facebook {width: 50%; margin: 3%;}
+#contato h5 {font-size: 1.1em;}
+}
+@media screen and (min-width: 1280px){
+/* CABEÇALHO */	
+.icon-menu {display: none;}
+/* MENU */
+.menu {width: auto; height: 56px; top: 21px; float: right; display: block !important; position: absolute; background: none; transform: translateX(0%);}
+.menu .social-button {display:none;}
+.menu ul {margin: 0;}
+.menu li {padding: 0; float: left; padding: 24px 20px 0 0;}
+.menu li a {color: #888888; font-size: 1.3em; padding: 0;}
+.menu li a:hover,.menu li a:active {color: #ED5353;}
+.menu li a:after,.menu li a:before {-webkit-backface-visibility: hidden; backface-visibility: hidden; border: 1px solid rgba(237, 83, 83, 0); content: " "; display: block; margin: 0 auto; -webkit-transition: all 280ms ease-in-out; transition: all 280ms ease-in-out; width: 0;}
+.menu li a:hover:after,.menu li a:hover:before {-webkit-backface-visibility: hidden; backface-visibility: hidden; border-color: #ED5353; -webkit-transition: width 350ms ease-in-out; transition: width 350ms ease-in-out; width: 100%;}
+/*====== CONTEUDO ======*/
+#conteudo {padding-top: 3%;}
+/*====== HOME ======*/
+#home {background: url(../images/developer.jpg)center center no-repeat; -moz-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+#home h2 {font-size: 4.5em;}
+#home img {display: none;}
+/*====== SOBRE ======*/
+#sobre h2 {font-size: 4em; text-align: left;}
+#sobre span {font-size: .4em;}
+/*====== SERVIÇOS ======*/
+#servicos h2 {font-size: 4em; text-align: left;}
+#servicos span {font-size: .4em;}
+/*====== PORTIFÓLIO ======*/
+#portifolio h2 {font-size: 4em; text-align: left;}
+#portifolio span {font-size: .4em;}
+/*====== CONTATO ======*/
+#contato h2 {font-size: 4em; text-align: left;}
+#contato span {font-size: .4em;}
+}
+
